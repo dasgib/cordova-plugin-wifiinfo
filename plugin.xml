@@ -26,22 +26,4 @@
         </config-file>
         <source-file src="src/android/net/emcniece/cordova/WifiInfo.java" target-dir="src/net/emcniece/cordova" />
     </platform>
-
-    <platform name="ios">
-        <js-module src="www/wifiinfo.js" name="WifiInfo">
-            <clobbers target="cordova.plugins.wifiinfo" />
-        </js-module>
-        <config-file target="config.xml" parent="/*">
-            <feature name="WifiInfo">
-                <param name="ios-package" value="WifiInfo"/>
-            </feature>
-        </config-file>
-        <header-file src="src/ios/WifiInfo-Bridging-Header.h"/>
-        <source-file src="src/ios/WifiInfo.swift"/>
-        <header-file src="src/ios/Hostname.h"/>
-        <source-file src="src/ios/Hostname.m"/>
-
-    </platform>
-        <dependency id="cordova-plugin-add-swift-support" version="1.7.1"/>
-
 </plugin>
